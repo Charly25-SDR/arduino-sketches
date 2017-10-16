@@ -1,5 +1,5 @@
 /*
-  Charly 25 RX BPF Board Tester V1.1
+  Charly 25 RX BPF Board Tester V1.2
   Sends I2C commands to the filter board device on the I2C bus interface of the Arduino board.
   Copyright (C) 2017  Markus Grundner / DG8MG
 
@@ -52,7 +52,7 @@ extern uint8_t BigFont[];
 
 uint8_t I2CCommandString[3] = {0};  // I2C command string
 
-int i2c_address = 0x21;  // Default I2C address 0x20
+int i2c_address = 0x21;  // Default I2C address of RX1 BPF board is 0x21
 unsigned int x, y;  // x and y coordinates on the display
 
 /*************************
